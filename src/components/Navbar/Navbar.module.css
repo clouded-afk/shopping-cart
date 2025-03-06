@@ -1,0 +1,11 @@
+.navbarContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.buttonContainer {
+    display: flex;
+    justify-content: space-evenly;
+    width: 30%;
+}
