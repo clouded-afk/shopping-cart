@@ -8,7 +8,7 @@
     border: none;
     cursor: pointer;
     font-family: "Bebas Neue", sans-serif;
-    color: #253D28;
+    color: black;
     letter-spacing: .25ch;
 }
 
@@ -28,10 +28,12 @@
     width: 100%;
 }
 
-.primary {
+.navbar {
     composes: btn;
+    color: #253D28;
 }
 
-.secondary {
+.error {
     composes: btn;
+    color:  #7F1D1D;
 }
