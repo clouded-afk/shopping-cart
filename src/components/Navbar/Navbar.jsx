@@ -10,9 +10,9 @@ export function Navbar() {
         <div className={styles.navbarContainer}>
             <h1 className={styles.pageTitle}>All The Things</h1>
             <div className={styles.buttonContainer}>
-                <Button type={"primary"} label={"Home"} onClick={() => navigate('/')}/>
-                <Button type={"primary"} label={"Shop"} onClick={() => navigate('/shop')}/>
-                <Button type={"secondary"} label={<FontAwesomeIcon className={styles.cartIcon} icon={faShoppingCart}/>}/>
+                <Button type={"navbar"} label={"Home"} onClick={() => navigate('/')}/>
+                <Button type={"navbar"} label={"Shop"} onClick={() => navigate('/shop')}/>
+                <Button type={"navbar"} label={<FontAwesomeIcon className={styles.cartIcon} icon={faShoppingCart}/>}/>
             </div>
         </div>
     )
