@@ -1,6 +1,7 @@
 import { Home } from "./components/Home/Home";
 import { Shop } from "./components/Shop/Shop";
 import { ErrorPage } from "./components/Error/ErrorPage";
+import { ItemCard } from "./components/ItemCard/ItemCard";
 import App from "./App";
 
 const routes = [ 
@@ -14,8 +15,8 @@ const routes = [
                 element: <Home />
             },
             {
-                path: 'shop',
-                element: <Shop />
+                path: 'itemcard',
+                element: <ItemCard />
             }
         ]
     }
