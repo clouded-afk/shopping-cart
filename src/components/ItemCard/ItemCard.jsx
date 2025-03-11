@@ -13,20 +13,21 @@ export function ItemCard({
         <div className={styles.container}>
             <div className={styles.itemContainer}>
                 <img className={styles.itemImg} src={itemImage} alt={itemName}/>
-                <div className={styles.itemInfo}>
-                    <div className={styles.item}>{itemName}</div>
-                    <div className={styles.item}>Price: {itemPrice}</div>
+            </div>
+            <div className={styles.itemInfo}>
+                <div className={styles.item}>{itemName}</div>
+                <div className={styles.item}>Price: {itemPrice}</div>
+                <div className={styles.buttonContainer}>
+                    <Button type={"quantity"} label={<FontAwesomeIcon icon={faMinus}/>}/>
+                    <input className={styles.quantityInput}
+                        type='number'
+                        id={itemId}
+                        min={0}
+                    />
+                    <Button type={"quantity"} label={<FontAwesomeIcon icon={faPlus}/>}/>
                 </div>
             </div>
-            <div className={styles.buttonContainer}>
-                <Button type={"quantity"} label={<FontAwesomeIcon icon={faPlus}/>}/>
-                <input className={styles.quantityInput}
-                    type='number'
-                    id={itemId}
-                    min={0}
-                />
-                <Button type={"quantity"} label={<FontAwesomeIcon icon={faMinus}/>}/>
-            </div>
+
         </div>
     )
 }
