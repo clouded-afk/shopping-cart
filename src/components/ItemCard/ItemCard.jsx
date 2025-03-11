@@ -3,10 +3,10 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faPlus, faMinus } from '@fortawesome/free-solid-svg-icons'
 import styles from "./ItemCard.module.css"
 
-export function ItemCard(
+export function ItemCard({
     itemImage,
     itemName,
-) {
+}) {
     return (
         <div className={styles.container}>
             <div className={styles.itemContainer}>
