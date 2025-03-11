@@ -1,0 +1,39 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 20%;
+    border: 1px solid red;
+}
+
+.itemImg {
+    border: 1px solid blue;
+    width: 100%;
+}
+
+.itemInfo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.item {
+    text-align: center;
+}
+
+input[type="number"] {
+    appearance: textfield;
+    -moz-appearance: textfield;
+    -webkit-appearance: none;
+}
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.quantityInput {
+    text-align: center;
+    width: 50px;
+}
