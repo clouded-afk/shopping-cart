@@ -1,3 +1,25 @@
 .itemContainer {
     display: flex;
 }
+
+.categoryHeader {
+    margin-top: 25px;
+    font-size: 32px;
+    font-family: "Bebas Neue", sans-serif;
+    color: #253D28;
+}
+
+.divider {
+    border: 2px solid black;
+    width: 100%;
+    margin: auto;
+}
+
+.categoryContainer {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.itemContainer {
+    margin-top: 10px;
+}
