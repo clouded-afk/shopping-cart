@@ -6,18 +6,23 @@ import styles from "./ItemCard.module.css"
 export function ItemCard({
     itemImage,
     itemName,
+    itemPrice
 }) {
     return (
         <div className={styles.container}>
             <div className={styles.itemContainer}>
                 <img className={styles.itemImg} src={itemImage} alt={itemName}/>
-                <div className={styles.item}>{itemName}</div>
+                <div className={styles.itemInfo}>
+                    <div className={styles.item}>{itemName}</div>
+                    <div className={styles.item}>Price: {itemPrice}</div>
+                </div>
             </div>
             <div className={styles.buttonContainer}>
                 <Button type={"quantity"} label={<FontAwesomeIcon icon={faPlus}/>}/>
-                <input 
+                <input className={styles.quantityInput}
                     type='number'
                     id='itemQuantity'
+                    min={0}
                 />
                 <Button type={"quantity"} label={<FontAwesomeIcon icon={faMinus}/>}/>
             </div>
