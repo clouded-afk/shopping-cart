@@ -4,6 +4,7 @@ import { faPlus, faMinus } from '@fortawesome/free-solid-svg-icons'
 import styles from "./ItemCard.module.css"
 
 export function ItemCard({
+    itemId,
     itemImage,
     itemName,
     itemPrice
@@ -21,7 +22,7 @@ export function ItemCard({
                 <Button type={"quantity"} label={<FontAwesomeIcon icon={faPlus}/>}/>
                 <input className={styles.quantityInput}
                     type='number'
-                    id='itemQuantity'
+                    id={itemId}
                     min={0}
                 />
                 <Button type={"quantity"} label={<FontAwesomeIcon icon={faMinus}/>}/>
