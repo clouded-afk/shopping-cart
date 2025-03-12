@@ -15,6 +15,18 @@ export function ItemCard({
         let inputValue = parseInt(inputField.value) || 0
         if (inputValue < 10) {
             inputField.value = inputValue + 1
+        } else {
+            alert("Limit 10 Items per SKU.")
+        }
+    }
+
+    const decreaseQuantity = () => {
+        let inputField = document.getElementById(itemId)
+        let inputValue = parseInt(inputField.value) || 0
+        if (inputValue !== 0) {
+            inputField.value = inputValue - 1
+        } else {
+            inputField.value = 0;
         }
     }
 
@@ -27,7 +39,7 @@ export function ItemCard({
                 <div className={styles.item}>{itemName}</div>
                 <div className={styles.item}>Price: {itemPrice}</div>
                 <div className={styles.buttonContainer}>
-                    <Button type={"quantity"} label={<FontAwesomeIcon icon={faMinus}/>}/>
+                    <Button type={"quantity"} label={<FontAwesomeIcon icon={faMinus} onClick={decreaseQuantity}/>}/>
                     <input className={styles.quantityInput}
                         type='number'
                         id={itemId}
