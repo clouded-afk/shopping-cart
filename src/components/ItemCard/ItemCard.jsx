@@ -9,6 +9,15 @@ export function ItemCard({
     itemName,
     itemPrice
 }) {
+
+    const increaseQuantity = () => {
+        let inputField = document.getElementById(itemId)
+        let inputValue = parseInt(inputField.value) || 0
+        if (inputValue < 10) {
+            inputField.value = inputValue + 1
+        }
+    }
+
     return (
         <div className={styles.container}>
             <div className={styles.itemContainer}>
@@ -23,8 +32,9 @@ export function ItemCard({
                         type='number'
                         id={itemId}
                         min={0}
+                        max={10}
                     />
-                    <Button type={"quantity"} label={<FontAwesomeIcon icon={faPlus}/>}/>
+                    <Button type={"quantity"} label={<FontAwesomeIcon icon={faPlus} onClick={increaseQuantity}/>}/>
                 </div>
                 <Button type={"addToCart"} label={"Add To Cart"}/> 
             </div>
