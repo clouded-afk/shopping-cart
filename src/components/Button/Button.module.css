@@ -33,6 +33,13 @@
     color: #253D28;
 }
 
+.addToCart {
+    composes: btn;
+    font-size: 14px;
+    padding: 2px 2px;
+    height: 25px;
+}
+
 .error {
     composes: btn;
     color:  #7F1D1D;
