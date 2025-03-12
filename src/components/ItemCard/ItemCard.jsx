@@ -26,6 +26,7 @@ export function ItemCard({
                     />
                     <Button type={"quantity"} label={<FontAwesomeIcon icon={faPlus}/>}/>
                 </div>
+                <Button type={"addToCart"} label={"Add To Cart"}/> 
             </div>
 
         </div>
