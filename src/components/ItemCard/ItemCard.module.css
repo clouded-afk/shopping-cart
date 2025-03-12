@@ -5,8 +5,11 @@
     align-items: center;
     justify-content: start;
     width: 20%;
-    height: 325px;
-    border: 1px solid red;
+    height: 320px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 20px;
+    box-shadow: 1px 2px 2px 1px #9CA3AF;
 }
 
 .itemContainer {
@@ -15,11 +18,9 @@
     justify-content: center;
     width: 100%;
     margin-bottom: auto;
-    border: 1px solid green;
 }
 
 .itemImg {
-    border: 1px solid blue;
     max-width: 90%;
     max-height: 175px;
     margin-top: 10px;
@@ -36,6 +37,8 @@
 
 .item {
     text-align: center;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 .buttonContainer {
