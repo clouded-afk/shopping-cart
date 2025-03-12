@@ -5,7 +5,7 @@
     align-items: center;
     justify-content: start;
     width: 20%;
-    height: 300px;
+    height: 325px;
     border: 1px solid red;
 }
 
@@ -31,6 +31,7 @@
     flex-direction: column;
     align-items: center;
     bottom: 0;
+    font-size: 14px;
 }
 
 .item {
@@ -38,7 +39,7 @@
 }
 
 .buttonContainer {
-    margin-top: 20px;
+    margin-top: 5px;
 }
 
 input[type="number"] {
