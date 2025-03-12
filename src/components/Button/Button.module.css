@@ -33,6 +33,18 @@
     color: #253D28;
 }
 
+.quantity {
+    border-radius: 20px;
+    margin: 5px;
+    cursor: pointer;
+    text-align: center;
+    border: none;
+}
+
+.quantity:hover {
+    color: gray;
+}
+
 .addToCart {
     composes: btn;
     font-size: 14px;
