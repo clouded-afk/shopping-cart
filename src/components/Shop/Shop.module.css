@@ -18,8 +18,27 @@
 .categoryContainer {
     padding-left: 20px;
     padding-right: 20px;
+    overflow-x: auto;
 }
 
 .itemContainer {
     margin-top: 10px;
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    gap: 20px;
+}
+
+.itemContainer::--webkit-scrollbar {
+    height: 8px;
+}
+
+itemContainer::--webkit-scrollbar-thumb {
+    background: #ccc;
+    border-radius: 4px;
+}
+
+.itemContainer > * {
+    flex: 0 0 auto;
+    width: calc(25% - 16px);
 }
