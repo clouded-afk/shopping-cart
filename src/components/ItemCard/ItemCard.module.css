@@ -59,4 +59,13 @@ input[type="number"]::-webkit-outer-spin-button {
 .quantityInput {
     text-align: center;
     width: 50px;
+    font-weight: bold;
+    background: #DBEAFE;
+    border-radius: 20px;
+    border: 1px solid black;
+}
+
+.quantityInput:focus {
+    outline: 2px solid #60A5FA;
+    border: none;
 }
