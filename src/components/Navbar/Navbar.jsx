@@ -12,7 +12,7 @@ export function Navbar() {
             <div className={styles.buttonContainer}>
                 <Button type={"navbar"} label={"Home"} onClick={() => navigate('/')}/>
                 <Button type={"navbar"} label={"Shop"} onClick={() => navigate('/shop')}/>
-                <Button type={"navbar"} label={<FontAwesomeIcon className={styles.cartIcon} icon={faShoppingCart}/>}/>
+                <Button type={"navbar"} label={<FontAwesomeIcon className={styles.cartIcon} icon={faShoppingCart}/>} onClick={() => navigate('/cart')}/>
             </div>
         </div>
     )
